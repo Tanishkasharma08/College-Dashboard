@@ -34,10 +34,10 @@ The project does **not** use a database or JavaScript. It is built using Flask f
 ---
 
 ## 📂 Project Structure
-college_dashboard/
-│
-├── app.py
-└── acet_dashboard.html
+project-folder/ 
+│ 
+├── app.py 
+├── acet_dashboard.html/ 
 
 ---
 
