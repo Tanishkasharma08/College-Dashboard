@@ -1,89 +1,61 @@
-# 📌 College Dashboard System
+# 🎓 College Dashboard System
 
-## 🏫 Project Overview
+## 📌 Project Description
 
-This is a **College Dashboard Web Application** developed using **Python (Flask)**, **HTML, CSS, and JavaScript**.
-The system provides an interactive and responsive dashboard for managing and displaying college-related information.
+The **College Dashboard System** is a web-based application developed using **Python and Flask**.  
+It displays college information in a clean and structured dashboard format.
 
----
-
-## ✨ Features
-
-* 📄 Responsive Dashboard Design
-* 🧭 Navigation Menu
-* 📢 Notice Section
-* 🏢 Departments Information
-* 📅 Academic Details
-* 📬 Contact Form
-* 📱 Mobile-Friendly Layout
-* 🎨 Modern UI with Smooth Animations
+The project does **not** use a database or JavaScript. It is built using Flask for backend routing and HTML/CSS for the user interface.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Features
 
-* **Python**
-* **Flask Framework**
-* **HTML5**
-* **CSS3**
-* **JavaScript**
-* **Bootstrap (if used)**
+- College Dashboard Home Page  
+- Departments Section  
+- Admissions Information  
+- Fee Structure Table (HTML Table)  
+- Academic Calendar  
+- Notices Section  
+- Responsive Layout  
+
+---
+
+## 🛠 Technologies Used
+
+- Python  
+- Flask (Web Framework)  
+- HTML5  
+- CSS3  
+- CSS Grid  
+- CSS Flexbox  
+- Responsive Web Design (Media Queries)  
 
 ---
 
 ## 📂 Project Structure
-
-```
-project-folder/
+college_dashboard/
 │
 ├── app.py
-├── templates/
-│     └── index.html
-├── static/
-│     ├── style.css
-│     └── script.js
-└── README.md
-```
+└── acet_dashboard.html
 
 ---
 
-## 🚀 How to Run the Project
+## ▶ How to Run the Project
 
-### 1️⃣ Install Requirements
+### 1️⃣ Install Flask
 
-Make sure Python is installed.
 
-Then install Flask:
-
-```
 pip install flask
-```
+
 
 ### 2️⃣ Run the Application
 
-```
+
 python app.py
-```
+
 
 ### 3️⃣ Open in Browser
 
-```
+
 http://127.0.0.1:5000/
-```
-
----
-
-## 🎯 Purpose of the Project
-
-This project is designed to:
-
-* Provide a centralized college information system
-* Improve digital management
-* Demonstrate Flask web development skills
-* Practice frontend and backend integration
-
----
-
-
-
-
