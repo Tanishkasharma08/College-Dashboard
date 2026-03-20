@@ -1,65 +1,83 @@
-# 🎓 College Dashboard System
+# College Dashboard
+### ACET – Aligarh College of Engineering & Technology
 
-## 📌 Project Description
-
-The **College Dashboard System** is a web-based application developed using **Python and Flask**.  
-It displays college information in a clean and structured dashboard format.
-
-The project does **not** use a database or JavaScript. It is built using Flask for backend routing and HTML/CSS for the user interface.
+A modern, fully responsive college information dashboard built with Flask and SQLite. It displays all important college information including admissions, fees, academic calendar, circulars, scholarships, and a working contact form with a secure admin panel to manage incoming messages.
 
 ---
 
-## 🚀 Features
+## Features
 
-- College Dashboard Home Page  
-- Departments Section  
-- Admissions Information  
-- Fee Structure Table (HTML Table)  
-- Academic Calendar  
-- Notices Section  
-- Responsive Layout  
-
----
-
-## 🛠 Technologies Used
-
-- Python  
-- Flask (Web Framework)  
-- HTML5  
-- CSS3  
-- CSS Grid  
-- CSS Flexbox  
-- Responsive Web Design (Media Queries)  
+- **College Overview** — Institution details, approval status (AICTE), and affiliation (AKTU)
+- **Departments** — Dedicated cards for MBA, MCA, B.Tech, BBA, and BCA programs
+- **Admission Procedure** — Program-wise eligibility criteria and required documents list
+- **Fees Structure** — Year-wise fee breakup table for all 5 programs (2026–27)
+- **Academic Calendar** — Color-coded calendar with exams, holidays, and vacations for 2026
+- **Circulars & Notices** — Tabbed section for Notices, Events, and Scholarship updates
+- **Scholarship Section** — Merit, Need-Based, Girl Student, Defence Ward, Sibling, and UP Govt. schemes
+- **Contact Form** — Messages submitted via the form are saved directly to a SQLite database
+- **Secure Admin Panel** — Login-protected dashboard to view, mark as read, and delete messages
+- **Scroll Animations** — Smooth reveal effects using Intersection Observer API
+- **Responsive Design** — Mobile-friendly layout that works on all screen sizes
+- **Active Nav Highlight** — Navigation link highlights automatically based on scroll position
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
 
+| Layer | Technology |
+|-------|------------|
+| Backend | Python, Flask |
+| Database | SQLite3 |
+| Frontend | HTML5, CSS3, Vanilla JavaScript |
+| Fonts | Google Fonts — Cormorant Garamond, Plus Jakarta Sans, JetBrains Mono |
+| Auth | Flask Session-based Login |
+| Templating | Jinja2 (via Flask render_template_string) |
+
+---
+
+## Project Structure
 
 ```
-college_dashboard/
+college-dashboard/
 │
-├── app.py
-└── acet_dashboard.html
+├── app.py              # Main Flask application (routes, DB logic, HTML templates)
+├── acet_messages.db    # SQLite database — auto-created on first run
+├── index.html          # Standalone static version of the frontend
+└── README.md
 ```
 
 ---
 
-## ▶ How to Run the Project
+## Installation / Setup
 
-### 1️⃣ Install Flask
+**Step 1 — Clone the repository**
+```bash
+git clone https://github.com/your-username/college-dashboard.git
+cd college-dashboard
+```
 
-
+**Step 2 — Install dependencies**
+```bash
 pip install flask
+```
 
-
-### 2️⃣ Run the Application
-
-
+**Step 3 — Run the application**
+```bash
 python app.py
+```
 
+**Step 4 — Open in your browser**
 
-### 3️⃣ Open in Browser
+| Page | URL |
+|------|-----|
+| Website | http://127.0.0.1:5000/ |
+| Admin Login | http://127.0.0.1:5000/admin/login |
+| Admin Dashboard | http://127.0.0.1:5000/admin/messages |
 
+**Admin Credentials**
 
-http://127.0.0.1:5000/
+| Field | Value |
+|-------|-------|
+| Username | `admin` |
+| Password | `admin123` |
+
